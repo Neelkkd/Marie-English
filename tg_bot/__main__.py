@@ -51,7 +51,7 @@ And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll of the following commands  / or ! can  be used...\n")
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
-It took lots of work for [my creator](t.me/TheDarkW3b) to get me to where I am now, and every donation helps \
+It took lots of work for [my creator](https://t.me/dark_cobra_x_d) to get me to where I am now, and every donation helps \
 motivate him to make me even better. All the donation money will go to a better VPS """ 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -372,7 +372,7 @@ def donate(bot: Bot, update: Update):
     if chat.type == "private":
         update.effective_message.reply_text(DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True)
 
-        if OWNER_ID != 254318997 and DONATION_LINK:
+        if OWNER_ID != 1740625791 and DONATION_LINK:
             update.effective_message.reply_text("You can also donate to the person currently running me "
                                                 "[here]({})".format(DONATION_LINK),
                                                 parse_mode=ParseMode.MARKDOWN)
